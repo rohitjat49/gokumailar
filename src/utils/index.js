@@ -4,13 +4,15 @@ import { apiUrl } from "../config";
 export const handleLogin = async (userEmail, password) => {
   try {
     const response = await axios.post(`${apiUrl}/auth/login`, {
-      userEmail,
+      username: userEmail,
       password,
     });
 
-    const { token, email, userName } = response.data;
+    console.log(response.data);
 
-    return { token, email, userName };
+    const { token, email, username } = response.data;
+
+    return { token, email, username };
   } catch (error) {
     if (error?.response) {
       console.error("Login failed:", error.response.data.message);

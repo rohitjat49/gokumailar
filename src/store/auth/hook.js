@@ -6,8 +6,8 @@ import { useEffect } from "react";
 export const useSetUserLogin = () => {
   const dispatch = useDispatch();
 
-  return (status, token) => {
-    dispatch(setUserLogin({ status, token }));
+  return (status, token, email, username) => {
+    dispatch(setUserLogin({ status, token, email, username }));
   };
 };
 

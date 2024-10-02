@@ -1,7 +1,7 @@
 import { useCheckUserSession } from "../store/auth/hook";
 
-export const QueryResolver = () => {
+export function QueryResolver() {
   useCheckUserSession();
 
   return null;
-};
+}

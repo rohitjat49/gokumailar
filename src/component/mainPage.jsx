@@ -16,13 +16,14 @@ const Navbar = () => {
   const loginHandler = async () => {
     if (!username || !password) alert("Invalid Username or password!!");
     setIsLoading(true);
-    setInterval(null, 10000);
-    // const data = await handleLogin(username, password);
+    const data = await handleLogin(username, password);
 
-    // if (data?.token) {
-    //   setUserLogin(true, data?.token);
-    //   setIsLoading(false);
-    // }
+    if (data?.token) {
+      setUserLogin(true, data?.token, data?.email, data?.username);
+      setIsLoading(false);
+      setLoginOpen(false);
+    }
+    setIsLoading(false);
   };
 
   return (
@@ -74,20 +75,15 @@ const Navbar = () => {
                   type="text"
                   placeholder="Username"
                   className="border p-2 w-full mt-2"
+                  onChange={(e) => setUsername(e.target.value)}
                 />
                 <input
                   type="password"
                   placeholder="Password"
                   className="border p-2 w-full mt-2"
+                  onChange={(e) => setPassword(e.target.value)}
                 />
                 {isLoading ? (
-                  <button
-                    className="mt-4 bg-blue-500 text-white px-4 py-2 rounded"
-                    onClick={() => loginHandler()}
-                  >
-                    Submit
-                  </button>
-                ) : (
                   <button
                     className="mt-4 bg-blue-500 text-white px-4 py-2 rounded"
                     onClick={() => setLoginOpen(false)}
@@ -95,10 +91,17 @@ const Navbar = () => {
                     <ClipLoader
                       color={"white"}
                       loading={isLoading}
-                      size={150}
+                      size={13}
                       aria-label="Loading Spinner"
                       data-testid="loader"
                     />{" "}
+                    Submit
+                  </button>
+                ) : (
+                  <button
+                    className="mt-4 bg-blue-500 text-white px-4 py-2 rounded"
+                    onClick={() => loginHandler()}
+                  >
                     Submit
                   </button>
                 )}
