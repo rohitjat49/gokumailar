@@ -8,11 +8,9 @@ export const handleLogin = async (userEmail, password) => {
       password,
     });
 
-    console.log(response.data);
+    const { token, email, username, emailsSent, maxEmailLimit } = response.data;
 
-    const { token, email, username } = response.data;
-
-    return { token, email, username };
+    return { token, email, username, emailsSent, maxEmailLimit };
   } catch (error) {
     if (error?.response) {
       console.error("Login failed:", error.response.data.message);

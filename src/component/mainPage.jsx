@@ -19,7 +19,14 @@ const Navbar = () => {
     const data = await handleLogin(username, password);
 
     if (data?.token) {
-      setUserLogin(true, data?.token, data?.email, data?.username);
+      setUserLogin(
+        true,
+        data?.token,
+        data?.email,
+        data?.username,
+        data?.emailsSent,
+        data?.maxEmailLimit
+      );
       setIsLoading(false);
       setLoginOpen(false);
     }

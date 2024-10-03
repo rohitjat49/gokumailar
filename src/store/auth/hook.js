@@ -6,8 +6,17 @@ import { useEffect } from "react";
 export const useSetUserLogin = () => {
   const dispatch = useDispatch();
 
-  return (status, token, email, username) => {
-    dispatch(setUserLogin({ status, token, email, username }));
+  return (status, token, email, username, emailsSent, maxEmailLimit) => {
+    dispatch(
+      setUserLogin({
+        status,
+        token,
+        email,
+        username,
+        maxEmailLimit,
+        emailsSent,
+      })
+    );
   };
 };
 
@@ -17,7 +26,7 @@ export const useUserLogin = () => {
 
 export const useCheckUserSession = () => {
   const userSession = useUserLogin();
-  const logOutUser = useSetUserLogin;
+  const logOutUser = useSetUserLogin();
 
   const isTokenValid = (token) => {
     if (!token) return false;
