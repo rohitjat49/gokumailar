@@ -7,6 +7,7 @@ import Features from './component/Features';
 import Powerfull from './component/Powerfull';
 import PricingPlans from './component/PricingPlans';
 import ProfilePage from './component/ProfilePage';
+import LoginButton from './component/LoginButton';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
    <Powerfull/>
    <PricingPlans/>
    <ProfilePage/>
+   <LoginButton/>
    </>
   );
 }
