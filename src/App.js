@@ -19,6 +19,7 @@ function App() {
       <PricingPlans />
       {/* <ProfilePage /> */}
       <QueryResolver />
+      
     </Provider>
   );
 }
