@@ -5,12 +5,12 @@ const Powerfull = () => {
   const [isPopupOpen, setPopupOpen] = useState(false);
 
   return (
-    <div className="bg-black text-white">
+    <div className=" text-white">
       <div className="text-xl text-center pt-10 text-teal-400">POWERFUL</div>
       <div className="text-center text-4xl mt-12">
         <h1>API & SMTP</h1>
       </div>
-      <div className="min-h-screen bg-black text-white flex items-center justify-center">
+      <div className="min-h-screen  text-white flex items-center justify-center">
         <div className="container mx-auto flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 p-6">
             <div className="flex flex-col items-start justify-center h-full">

@@ -34,7 +34,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gray-800 p-4">
+    <nav className=" p-4">
       <div className="container mx-auto flex justify-between items-center">
         <div>
           <img
@@ -133,10 +133,10 @@ const Navbar = () => {
             <div className="absolute right-12 mt-12 text-white bg-Features-bg border rounded-lg shadow-lg">
               <ul className="py-2">
                 <li className="px-4 py-2 hover:text-green-500 cursor-pointer">
-                  monstermailer opium
+                Gokumailar opium
                 </li>
                 <li className="px-4 py-2 hover:text-green-500 cursor-pointer">
-                  monstermailer API Creator
+                Gokumailar API Creator
                 </li>
                 <li className="px-4 py-2 hover:text-green-500 cursor-pointer">
                   Terms and Conditions

@@ -44,7 +44,7 @@ const Features = () => {
   ];
 
   return (
-    <div className="bg-Features-bg text-white py-10">
+    <div className=" text-white py-10">
       <div className="text-center mb-8">
         <p className="text-green-400 uppercase tracking-wider">Features</p>
         <h2 className="text-4xl font-bold text-white">Mailing Solution</h2>
