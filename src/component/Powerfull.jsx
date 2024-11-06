@@ -57,7 +57,7 @@ const Powerfull = () => {
         <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
           <div className="bg-Features-bg p-6 rounded-lg">
             <h2 className="text-lg font-bold">Contact us on</h2>
-            <p> WhatsApp for purchase inquiries:+91 90730 29819</p>
+            <p> WhatsApp for purchase inquiries:+91 6291486395</p>
             <button
               className="mt-4 bg-red-500 text-white px-4 py-2 rounded"
               onClick={() => setPopupOpen(false)}
