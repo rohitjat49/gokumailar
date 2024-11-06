@@ -37,11 +37,12 @@ const Navbar = () => {
     <nav className=" p-4">
       <div className="container mx-auto flex justify-between items-center">
         <div>
-          <img
-            src="Img/monstermailer_logo_homepage.gif"
+          {/* <img
+            // src="Img/monstermailer_logo_homepage.gif"
             alt="Logo"
             className="h-10"
-          />
+          /> */}
+          <p className="text-white font-bold upparcase text-2xl">GOKUMAILAR</p>
         </div>
 
         <div className="flex space-x-4">
