@@ -3,7 +3,7 @@ import { FaPlusCircle, FaAsterisk, FaStar } from "react-icons/fa";
 
 const PricingPlans = () => {
   return (
-    <div className="min-h-screen bg-black text-white flex items-center justify-center">
+    <div className="min-h-screen  text-white flex items-center justify-center">
       <div className="container mx-auto">
         <h1 className="text-center text-teal-500 mb-8 text-xl font-semibold">PRICING</h1>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6">

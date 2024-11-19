@@ -16,7 +16,7 @@ function App() {
       <HeroSectionRoot />
       <Features />
       <Powerfull />
-      <PricingPlans />
+      {/* <PricingPlans /> */}
       {/* <ProfilePage /> */}
       <QueryResolver />
       

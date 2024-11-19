@@ -75,10 +75,10 @@ const ProfilePage = () => {
 
       <div className="flex justify-center space-x-4 mt-6">
         <button className="bg-green-700 px-6 py-2 rounded-md">
-          MonsterMailer Opium
+        Gokumailar Opium
         </button>
         <button className="bg-green-700 px-6 py-2 rounded-md">
-          MonsterMailer API Creator
+        Gokumailar API Creator
         </button>
       </div>
     </div>
